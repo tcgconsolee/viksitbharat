@@ -102,6 +102,12 @@ if(card3) {
 if(card4) {
     new HoverButton(card4)
 }
+$(".btn").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#explore").offset().top
+    }, 1000);
+
+})
 function hide() {
     document.getElementById("u").style.display = "none";
     $(".urban").css("background", "#F8F8F8")
