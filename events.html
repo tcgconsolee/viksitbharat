@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+</head>
+<body style="overflow:hidden;">
+    <div class="loading">
+        <div class="hero">
+            <img src="./imgs/logo.svg" alt="" class="log">
+            <div class="name">
+                <p>Cyber Sculptures</p>
+            </div>
+            <div class="motto">
+                <p>sculpting greatness</p>
+            </div>
+        </div>
+    </div>
+    <img src="./imgs/bg.svg" alt="" class = "bg">
+    <div class="menu">
+        <div class="menu-item" style="display:grid;grid-template-columns: auto auto;">
+            <img src="./imgs/logo.svg" alt="" class = "logo">
+            <div class="collaboration">
+                <p> in collaboration with </p>
+                <img src="./imgs/gov.svg" alt="">
+            </div>
+        </div>
+        <div class="menu-item"></div>
+        <a class="menu-item click" id = "home" href = "/">home</a>
+        <a class="menu-item click" id = "programmes" href = "/programmes.html">programmes</a>
+        <a class="menu-item click" id = "events" href = "/events.html">events</a>
+    </div>
+    <div class="phead" style="font-size: 2vmax;">
+        <p>Event Calendar</p>
+    </div>
+    <div class="tabcont">
+        <div class="head">January</div>
+        <table class = "events-t">
+            <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+            </tr>
+            <tr>
+                <td id = "weekend">01</td>
+                <td>02</td>
+                <td>03</td>
+                <td>04</td>
+                <td>05</td>
+                <td id = "selected">06</td>
+                <td id = "weekend">07</td>
+            </tr>
+            <tr>
+                <td id = "weekend">08</td>
+                <td>09</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td id = "weekend">14</td>
+            </tr>
+            <tr>
+                <td id = "weekend">15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td id = "weekend">21</td>
+            </tr>
+            <tr>
+                <td id = "weekend">22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td id = "selected">26</td>
+                <td id = "selected">27</td>
+                <td id = "weekend">28</td>
+            </tr>
+            <tr>
+                <td id = "weekend">29</td>
+                <td>30</td>
+                <td>31</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div class="cursor"></div>
+    <script src="index.js"></script>
+</body>
+</html>
